@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <!-- Fondo oscuro -->
+  <rect width="1920" height="1080" fill="#0a0a0a"/>
+  
+  <!-- Textura de fondo -->
+  <filter id="noise" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="5" stitchTiles="stitch" result="noise"/>
+    <feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.3 0" in="noise" result="coloredNoise"/>
+    <feBlend mode="overlay" in="SourceGraphic" in2="coloredNoise" result="blend"/>
+  </filter>
+  <rect width="1920" height="1080" fill="#0a0a0a" filter="url(#noise)"/>
+  
+  <!-- Niebla misteriosa -->
+  <g opacity="0.2">
+    <ellipse cx="960" cy="800" rx="900" ry="200" fill="#4a0000"/>
+    <ellipse cx="960" cy="700" rx="800" ry="150" fill="#0a3b0a" opacity="0.3"/>
+  </g>
+  
+  <!-- Símbolos esotéricos -->
+  <g opacity="0.15" transform="translate(960, 540)">
+    <!-- Pentagrama -->
+    <path d="M0,-300 L58,-93 L285,-93 L102,35 L160,242 L0,114 L-160,242 L-102,35 L-285,-93 L-58,-93 Z" 
+          fill="none" stroke="#b8860b" stroke-width="3"/>
+    
+    <!-- Círculo -->
+    <circle cx="0" cy="0" r="350" fill="none" stroke="#8b0000" stroke-width="3"/>
+    
+    <!-- Símbolos adicionales -->
+    <g transform="translate(0, 0)" opacity="0.7">
+      <!-- Símbolos alrededor del círculo -->
+      <g transform="rotate(0)">
+        <path d="M0,-400 L0,-370 M-10,-385 L10,-385" stroke="#b8860b" stroke-width="2"/>
+      </g>
+      <g transform="rotate(60)">
+        <path d="M0,-400 L0,-370 M-10,-385 L10,-385" stroke="#b8860b" stroke-width="2"/>
+      </g>
+      <g transform="rotate(120)">
+        <path d="M0,-400 L0,-370 M-10,-385 L10,-385" stroke="#b8860b" stroke-width="2"/>
+      </g>
+      <g transform="rotate(180)">
+        <path d="M0,-400 L0,-370 M-10,-385 L10,-385" stroke="#b8860b" stroke-width="2"/>
+      </g>
+      <g transform="rotate(240)">
+        <path d="M0,-400 L0,-370 M-10,-385 L10,-385" stroke="#b8860b" stroke-width="2"/>
+      </g>
+      <g transform="rotate(300)">
+        <path d="M0,-400 L0,-370 M-10,-385 L10,-385" stroke="#b8860b" stroke-width="2"/>
+      </g>
+    </g>
+    
+    <!-- Runas y símbolos adicionales -->
+    <g opacity="0.6">
+      <path d="M-250,0 L-200,50 L-250,100" fill="none" stroke="#b8860b" stroke-width="2"/>
+      <path d="M250,0 L200,50 L250,100" fill="none" stroke="#b8860b" stroke-width="2"/>
+      <path d="M0,-200 L0,-150 M-25,-175 L25,-175" stroke="#8b0000" stroke-width="2"/>
+      <path d="M0,200 L0,150 M-25,175 L25,175" stroke="#8b0000" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Velas y elementos rituales (siluetas) -->
+  <g opacity="0.3">
+    <!-- Velas -->
+    <rect x="400" y="900" width="20" height="100" fill="#b8860b"/>
+    <rect x="1500" y="900" width="20" height="100" fill="#b8860b"/>
+    <rect x="600" y="950" width="15" height="70" fill="#b8860b"/>
+    <rect x="1300" y="950" width="15" height="70" fill="#b8860b"/>
+    
+    <!-- Llamas de las velas -->
+    <ellipse cx="410" cy="890" rx="10" ry="20" fill="#8b0000" opacity="0.5"/>
+    <ellipse cx="1510" cy="890" rx="10" ry="20" fill="#8b0000" opacity="0.5"/>
+    <ellipse cx="607" cy="940" rx="8" ry="15" fill="#8b0000" opacity="0.5"/>
+    <ellipse cx="1307" cy="940" rx="8" ry="15" fill="#8b0000" opacity="0.5"/>
+  </g>
+  
+  <!-- Silueta de montañas/selva en el horizonte -->
+  <path d="M0,800 Q240,700 480,750 Q720,650 960,700 Q1200,600 1440,750 Q1680,650 1920,800 L1920,1080 L0,1080 Z" 
+        fill="#000000" opacity="0.7"/>
+</svg>
